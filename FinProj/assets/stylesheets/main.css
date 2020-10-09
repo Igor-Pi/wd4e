@@ -273,10 +273,10 @@ label {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 8vh;
+  font-size: 1vh;
   padding: 7px 9px 4px 9px;
   margin-top: 22px;
-  height: 9vh;
+  height: 1vh;
   transition: all .15s ease;
 }
 
@@ -300,7 +300,7 @@ nav {
 }
 input:checked ~ nav {
   max-height: 500px;
-  font-size: 5vh;
+  font-size: 1vh;
 }
 
 input:checked ~ h1 {
