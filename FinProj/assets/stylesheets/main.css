@@ -270,15 +270,22 @@ ul {
   border-radius: 6px;
 }
 label {
-  
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 24px;
+  font-size: 5em;
   padding: 7px 9px 4px 9px;
   margin-top: 22px;
+  height: 95px;
   transition: all .15s ease;
 }
+
+label > p {
+	display: inline;
+	vertical-align: middle;
+	padding-top: .75em;
+}
+
 label:hover {
   color: #a9b2b9;
 }
