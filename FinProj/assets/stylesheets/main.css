@@ -95,12 +95,12 @@ h1, h2, h3, h4 {
   color: #648880;
 }
 h1 {
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 3em;
+  line-height: .9em;
 }
 h2 {
-  font-size: 24px;
-  line-height: 44px;
+  font-size: 2em;
+  line-height: .9em;
 }
 h3 {
   font-size: 21px;
@@ -227,10 +227,10 @@ cite, em {
   /*border-top: 14px solid #648880;*/
   float: left;
   font-family: "Almendra";
-  font-size: 48px;
+  /*font-size: 48px;*/
 /*  font-weight: 100;*/
   letter-spacing: 1px;
-  line-height: 44px;
+  /*line-height: 44px;*/
   padding: 20px 0 22px 0;
   text-transform: uppercase;
 }
@@ -273,10 +273,10 @@ label {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 5vh;
+  font-size: 2em;
   padding: 7px 9px 4px 9px;
   margin-top: 22px;
-  height: 6vh;
+  /*height: 1em;*/
   transition: all .15s ease;
 }
 
@@ -300,7 +300,7 @@ nav {
 }
 input:checked ~ nav {
   max-height: 500px;
-  font-size: 5vh;
+  font-size: 2em;
 }
 
 input:checked ~ h1 {
@@ -313,7 +313,6 @@ ul {
   list-style: none;
   /*margin: 8px 0 0 0;*/
   width: 50%;
-  /*font-size: 2em;*/
 }
 li {
   border-bottom: 1px solid #cecfd5;
@@ -385,7 +384,7 @@ p a {
 	  width: 50%;
 	}
 
-	.hero{
+	/*.hero{
 		line-height: 44px;
 	}
 	.hero h2 {
@@ -393,7 +392,7 @@ p a {
 	}
 	.hero p {
 	  font-size: 24px;
-	}
+	}*/
 
 	/*
 	  ========================================
