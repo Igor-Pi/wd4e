@@ -122,28 +122,19 @@ h5 {
 */
 
 .hero {
-  /*min-width: 960px;*/
   background: #fff;
   color: #648880;
   line-height: 22px;
   padding: 22px 80px 66px 80px;
   text-align: center;
-/*  background: url(kemlin-bg.jpg) no-repeat;
-  background-size: 960px auto;*/
 }
-/*.hero h2 {
-  font-size: 36px;
-}
-.hero p {
-  font-size: 24px;
-}*/
-
 
 /*
   ========================================
   Clearfix
   ========================================
 */
+
 .group:before,
 .group:after {
   content: "";
@@ -154,27 +145,13 @@ h5 {
 }
 .group {
   clear: both;
-  /**zoom: 1; */
 }
+
 /*
   ========================================
   Primary header
   ========================================
 */
-
-.logo {
-  float: left;
-  /*border-top: 4px solid #648880;*/
-  /*padding: 40px 0 22px 0;*/
-  /*float: left;*/
-}
-
-/*.primary-header{
-	background: url(640px-Winter_Palace_Panorama_4.jpg) no-repeat;
-	background-size: 60% auto;
-	background-position:right top;
-	background-clip: padding-box;
-}*/
 
 .primary-header img{
 	float: left;
@@ -224,26 +201,16 @@ cite, em {
   font-style: italic;
 }
 .logo {
-  /*border-top: 14px solid #648880;*/
   float: left;
   font-family: "Almendra";
-  /*font-size: 48px;*/
-/*  font-weight: 100;*/
   letter-spacing: 1px;
-  /*line-height: 44px;*/
   padding: 20px 0 22px 0;
   text-transform: uppercase;
 }
-/*.tagline {
-  margin: 66px 0 22px 0;
-  text-align: right;
-}*/
 
 .teaser img {
   border-radius: 5px;
-  /*display: block;*/
   margin-bottom: 22px;
-  /*max-width: 100%*/
   width: 100%;
 }
 
@@ -257,14 +224,8 @@ input {
   display: none;
 }
 
-/*
-  ========================================
-  Advanced Navigation
-  ========================================
-*/
-
 label,
-ul {
+.nav ul {
   float: right;
   border: 1px solid #cecfd5;
   border-radius: 4px;
@@ -308,19 +269,18 @@ input:checked ~ h1 {
   padding-bottom: 0;
 }
 
-ul {
+.nav ul {
   display: block;
   list-style: none;
-  /*margin: 8px 0 0 0;*/
   width: 50%;
 }
-li {
+.nav li {
   border-bottom: 1px solid #cecfd5;
 }
-li:last-child {
+.nav li:last-child {
   border-bottom: 0;
 }
-li > a {
+.nav li > a {
   display: block;
   padding: 6px 12px;
 }
@@ -348,6 +308,7 @@ p a {
 .teaser a:hover h3 {
   color: #a9b2b9;
 }
+
 /*
   ========================================
   Rows
@@ -370,6 +331,95 @@ p a {
    padding: 2% 0.5% 1% 0.5%;
  }
 
+/*
+  ========================================
+  Tables
+  ========================================
+*/
+
+.table_caption{
+	margin: 0 auto;
+	width: 80%;
+}
+
+.table_caption ~ p{
+	margin: 0 auto;
+	width: 80%;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+/*   whole table   */
+table{
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	width: 80%;
+	line-height: 35px;
+	font-family: Lato, Sans-Serif, Verdana, Arial, "Times New Roman";
+	font-size: 18px;
+	font-weight: 300;
+	/*border-collapse: collapse;*/
+}
+
+/*   table header   */
+th{
+	background: #ccc;
+	background: radial-gradient(#648880, #c3cde6);
+	font-variant: small-caps;
+	letter-spacing: .5em;
+	line-height: 50px;
+	border-bottom: 2px solid #648880;
+	border-right: 1px solid #fff;
+	border-radius: 5px 5px 0 0;
+	padding: 15px;
+	color: #000;
+}
+
+th:first-child{
+	text-align: left;
+	background: radial-gradient(farthest-corner at 20%, #648880, #c3cde6);
+}
+
+th:last-child{
+	border-right: none;
+}
+
+/*   table rows   */
+
+tr:nth-child(n+2){
+	opacity: .7;
+}
+
+tr:hover{
+	opacity: 1;
+}
+
+/*   table data   */
+
+td{
+	color: #007;
+	background-color: #e4ddce;
+	border-bottom: 1px solid #cecfd5;
+	border-right: 1px solid #cecfd5;
+  	padding: 10px 15px;
+  	border-radius: 2px;
+}
+
+td:last-child{
+	border-right: none;
+}
+
+tr td:nth-child(n+2){
+	text-align: center;
+}
+
+/*
+  ========================================
+  Media queires
+  ========================================
+*/
 
 @media screen and (min-width: 1200px){
 
@@ -384,16 +434,6 @@ p a {
 	  width: 50%;
 	}
 
-	/*.hero{
-		line-height: 44px;
-	}
-	.hero h2 {
-	  font-size: 36px;
-	}
-	.hero p {
-	  font-size: 24px;
-	}*/
-
 	/*
 	  ========================================
 	  Navigation
@@ -403,14 +443,12 @@ p a {
 	label {
 	  display: none;
 	}
-	ul {
+	.nav ul {
 	  margin: auto;
 	  width: auto;
 	  border: none;
 	}
-	li{
-		border: none;
-	}
+	
 	a {
 		padding: auto;
 	}
@@ -424,6 +462,7 @@ p a {
 	  display: inline-block;
 	  margin: 0 10px;
 	  vertical-align: top;
+	  border: none;
 	}
 	.nav li:last-child {
 	  margin-right: 0;
