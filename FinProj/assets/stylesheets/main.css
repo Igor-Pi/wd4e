@@ -88,11 +88,11 @@ table {
   ========================================
 */
 
-h1, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p {
   margin-bottom: 22px;
 }
 h1, h2, h3, h4 {
-  color: #648880;
+  color: #394d48;
 }
 h1 {
   font-size: 3em;
@@ -123,10 +123,14 @@ h5 {
 
 .hero {
   background: #fff;
-  color: #648880;
+  color: #394d48;
   line-height: 22px;
   padding: 22px 80px 66px 80px;
   text-align: center;
+}
+
+.hero p {
+	font-size: 1.5em;
 }
 
 /*
@@ -191,7 +195,7 @@ h5 {
 */
 body {
   background: #293f50;
-  color: #888;
+  color: #394d48;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 strong {
@@ -298,15 +302,17 @@ input:checked ~ h1 {
 */
 
 a {
-  color: #648880;
+  color: #394d48;
   text-decoration: none;
 }
 a:hover {
-  color: #a9b2b9;
+  color: #627378;
 }
-p a {
-  border-bottom: 1px solid #dfe2e5;
+p a, 
+td a {
+  border-bottom: 1px solid #b4bfc2;
 }
+
 .teaser a:hover h3 {
   color: #a9b2b9;
 }
@@ -344,12 +350,12 @@ p a {
 	width: 80%;
 }
 
-.table_caption ~ p{
+.table_caption ~ p, ul, h4{
 	margin: 0 auto;
 	width: 80%;
 	margin-top: 15px;
 	margin-bottom: 30px;
-	font-size: 18px;
+	font-size: 1.3em;
 }
 
 /*   whole table   */
@@ -359,16 +365,17 @@ table{
 	margin-bottom: 30px;
 	width: 80%;
 	line-height: 35px;
-	font-family: Lato, Sans-Serif, Verdana, Arial, "Times New Roman";
-	font-size: 18px;
-	font-weight: 300;
+	/*font-family: Lato, Sans-Serif, Verdana, Arial, "Times New Roman";*/
+	font-size: 1.5em;
+	/*font-weight: 300;*/
 	/*border-collapse: collapse;*/
 }
 
 /*   table header   */
 th{
 	background: #ccc;
-	background: radial-gradient(#648880, #c3cde6);
+	background: radial-gradient(#e6eaf5, #c3cde6);
+	font-weight: 400;
 	font-variant: small-caps;
 	letter-spacing: .5em;
 	line-height: 50px;
@@ -376,12 +383,12 @@ th{
 	border-right: 1px solid #fff;
 	border-radius: 5px 5px 0 0;
 	padding: 15px;
-	color: #000;
+	/*color: #000;*/
 }
 
 th:first-child{
 	text-align: left;
-	background: radial-gradient(farthest-corner at 20%, #648880, #c3cde6);
+	background: radial-gradient(farthest-corner at 20%, #e6eaf5, #c3cde6);
 }
 
 th:last-child{
@@ -391,7 +398,7 @@ th:last-child{
 /*   table rows   */
 
 tr:nth-child(n+2){
-	opacity: .7;
+	opacity: .8;
 }
 
 tr:hover{
@@ -401,8 +408,8 @@ tr:hover{
 /*   table data   */
 
 td{
-	color: #007;
-	background-color: #e4ddce;
+	/*color: #007;*/
+	background-color: #dbdbdb;
 	border-bottom: 1px solid #cecfd5;
 	border-right: 1px solid #cecfd5;
   	padding: 10px 15px;
