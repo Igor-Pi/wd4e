@@ -234,7 +234,8 @@ label {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 2em;
+  font-size: 4em;
+  line-height: 55px;
   padding: 7px 9px 4px 9px;
   margin-top: 22px;
   /*height: 1em;*/
@@ -261,7 +262,8 @@ nav {
 }
 input:checked ~ nav {
   max-height: 500px;
-  font-size: 2em;
+  line-height: 50px;
+  font-size: 3em;
 }
 
 input:checked ~ h1 {
@@ -272,7 +274,7 @@ input:checked ~ h1 {
 .nav ul {
   display: block;
   list-style: none;
-  width: 50%;
+  width: 75%;
 }
 .nav li {
   border-bottom: 1px solid #cecfd5;
