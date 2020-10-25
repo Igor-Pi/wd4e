@@ -220,20 +220,24 @@ cite, em {
   width: 100%;
 }
 
-.img_left{
-	/*display: inline-block;*/
-	float: right;
-	margin-left: 15px;
+.img_right{
+	display: grid;
 }
 
-.img_left img{
-	height: 400px;
+.img_right img{
+	margin: 0 auto;
+	height: 500px;
 }
 
-.img_left p{
+figcaption{
 	width: auto;
 	font-size: 1.3em;
 	text-align: center;
+	margin: 15px 0;
+}
+
+article figure{
+	margin: 0 auto;
 }
 
 ul{
@@ -528,6 +532,23 @@ tr td:nth-child(n+2){
 		width: 80%;
 		font-size: 1.3em;
 	}
+
+	/*images at the Culture page*/
+	.img_right{
+		display: block;
+		float: right;
+		margin-left: 15px;
+	}
+
+	.img_right img{
+		height: 400px;
+	}
+
+	/*.img_right p{
+		width: auto;
+		font-size: 1.3em;
+		text-align: center;
+	}*/
 
 }
 
