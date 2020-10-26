@@ -109,12 +109,6 @@ h4, p {
   font-size: 1.8em;
   line-height: 1.2em;
 }
-/*h5 {
-  color: #a9b2b9;
-  font-size: 1.3em;
-  font-weight: 400;
-  text-transform: uppercase;
-}*/
 
 /*
   ========================================
@@ -129,10 +123,6 @@ h4, p {
   padding: 22px 80px 66px 80px;
   text-align: center;
 }
-
-/*.hero p {
-	font-size: 1.5em;
-}*/
 
 /*
   ========================================
@@ -178,7 +168,7 @@ h4, p {
 }
 .primary-footer small {
   float: left;
-  font-weight: 400;
+  font-weight: 600;
 }
 .primary-header a,
 .primary-footer a {
@@ -333,18 +323,6 @@ input:checked ~ h1 {
 	background-color: #3a5970;
 }
 
-.menu {
-	/*height: 100%;*/
-	position: absolute;
-	/*transform-style: preserve-3d;*/
-	transition: all .1s linear;
-	/*width: 100%;*/
-}
-
-.menu:hover{
-	height: 50%;
-}
-
 /*
   ========================================
   Links
@@ -425,10 +403,7 @@ table{
 	margin-bottom: 30px;
 	width: 85%;
 	line-height: 35px;
-	/*font-family: Lato, Sans-Serif, Verdana, Arial, "Times New Roman";*/
 	font-size: 2em;
-	/*font-weight: 300;*/
-	/*border-collapse: collapse;*/
 }
 
 /*   table header   */
@@ -443,7 +418,6 @@ th{
 	border-right: 1px solid #fff;
 	border-radius: 5px 5px 0 0;
 	padding: 15px;
-	/*color: #000;*/
 }
 
 th:first-child{
@@ -468,7 +442,6 @@ tr:hover{
 /*   table data   */
 
 td{
-	/*color: #007;*/
 	background-color: #dbdbdb;
 	border-bottom: 1px solid #cecfd5;
 	border-right: 1px solid #cecfd5;
@@ -483,6 +456,14 @@ td:last-child{
 tr td:nth-child(n+2){
 	text-align: center;
 }
+
+.date_to_hide{
+	display: none;
+}
+
+span{
+	display: inline-block;
+	}
 
 /*
   ========================================
@@ -560,11 +541,12 @@ tr td:nth-child(n+2){
 		height: 400px;
 	}
 
-	/*.img_right p{
-		width: auto;
-		font-size: 1.3em;
-		text-align: center;
-	}*/
+	.date_to_hide{
+		display: table-cell;
+	}
+	span{
+		display: none;
+	}
 
 }
 
@@ -581,4 +563,5 @@ tr td:nth-child(n+2){
 	.col-2-3 {
 	  width: 66.66%;
 	}
+
  }
