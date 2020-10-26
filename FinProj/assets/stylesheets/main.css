@@ -167,6 +167,7 @@ h4, p {
   padding-top: 44px;
 }
 .primary-footer small {
+  color: #fff;
   float: left;
   font-weight: 600;
 }
